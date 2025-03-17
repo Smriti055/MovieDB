@@ -1,0 +1,21 @@
+{
+    "movies": [
+      { "id": 1, "title": "Dune: Part Two", "type": "movie" },
+      { "id": 2, "title": "Oppenheimer", "type": "movie" },
+      { "id": 3, "title": "Spider-Man: Across the Spider-Verse", "type": "movie" },
+      { "id": 4, "title": "Avatar: The Way of Water", "type": "movie" },
+      { "id": 5, "title": "John Wick: Chapter 4", "type": "movie" },
+      { "id": 6, "title": "The Batman", "type": "movie" },
+      { "id": 7, "title": "Guardians of the Galaxy Vol. 3", "type": "movie" },
+      { "id": 8, "title": "Doctor Strange in the Multiverse of Madness", "type": "movie" }
+    ],
+    "actors": [
+      { "id": 101, "name": "Leonardo DiCaprio", "type": "actor" },
+      { "id": 102, "name": "Christian Bale", "type": "actor" }
+    ],
+    "tvShows": [
+      { "id": 201, "title": "Breaking Bad", "type": "tvShow" },
+      { "id": 202, "title": "Stranger Things", "type": "tvShow" }
+    ]
+  }
+  
