@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Star, Calendar, Clapperboard, Users, Clock, Film, PlayCircle } from "lucide-react";
 import Review from "../Components/Review";
 import AverageRating from "../Components/AverageRating";
@@ -103,6 +103,7 @@ function TvShowDetail() {
                     </h2>
                     <div className="flex gap-3 sm:gap-4 overflow-x-auto py-2 scrollbar-hide">
                         {cast.slice(0, 9).map((actor) => (
+                            <Link to={`/actor/${actor.id}`} className="cursor-pointer" key={actor.id}>
                             <div key={actor.id} className="min-w-[70px] sm:min-w-[100px] text-center">
                                 <img
                                     src={actor.profile_path ? `https://image.tmdb.org/t/p/w200${actor.profile_path}` : "https://via.placeholder.com/100"}
@@ -111,6 +112,7 @@ function TvShowDetail() {
                                 />
                                 <p className="text-xs sm:text-sm mt-1">{actor.name}</p>
                             </div>
+                            </Link>
                         ))}
                     </div>
 
