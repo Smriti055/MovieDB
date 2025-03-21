@@ -28,14 +28,15 @@ function ComingSoon() {
 
   return (
     <div className="text-center p-6 bg-black">
-      <h2 className="text-3xl font-bold mb-6 text-white">🎬 Coming Soon Movies</h2>
+      <h2 className="text-3xl font-bold mb-6 text-white mr-2">🎬 Coming Soon Movies</h2>
 
       {loading ? (
         <div className="flex justify-center items-center h-40">
           <LoaderCircle className="w-12 h-12 animate-spin text-blue-500" />
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center sm:justify-start">
+
 
           {comingSoonMovies.length > 0 ? (
             comingSoonMovies.map((movie) => (

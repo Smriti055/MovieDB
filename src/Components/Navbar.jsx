@@ -46,7 +46,7 @@ function Navbar() {
                                 <Link 
                                     key={item.label} 
                                     to={item.path} 
-                                    className={`hover:text-black transition-colors px-3 py-2 rounded-lg ${
+                                    className={`hover:text-black transition-colors px-2 py-1 rounded-lg ${
                                         location.pathname === item.path ? 'text-black' : 'text-white'
                                     }`}
                                 >
