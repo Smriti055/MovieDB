@@ -73,7 +73,7 @@ function Search() {
     }, []);
 
     return (
-        <div className="relative w-full sm:w-72" ref={dropdownRef}>
+        <div className="relative w-full sm:w-72 md:w-96" ref={dropdownRef}>
             <form className="relative h-12 bg-zinc-900/90 rounded-xl p-2 flex items-center">
                 <SearchIcon className="absolute left-4 text-white w-5 h-5" />
                 <input
@@ -90,7 +90,7 @@ function Search() {
             </form>
 
             {searchQuery.trim() && (
-                <div className="absolute top-full mt-2 w-full max-w-sm bg-black text-white shadow-lg rounded-lg max-h-60 overflow-y-auto z-50 animate-fade-in">
+                <div className="absolute top-full mt-2 w-full max-w-sm md:max-w-md lg:max-w-lg bg-black text-white shadow-lg rounded-lg max-h-[300px] overflow-y-auto z-50 animate-fade-in">
                     {loading ? (
                         <div className="p-3 text-gray-400 text-center">Loading...</div>
                     ) : searchResults.length > 0 ? (
